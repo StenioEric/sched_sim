@@ -84,9 +84,11 @@ void accounting(struct queue *q)
         TMT += aux->turnaround_time;
     }
 
-    printf("TME: %f\n", (double)TME/(double)num_ready);
+    // printf("TME: %f\n", (double)TME/(double)num_ready);
+    printf("TME: %f\n", (double)TME/(double)NPROC);
     
-    printf("TMB: %f\n", (double)TMB/(double)num_blocked);
+    // printf("TMB: %f\n", (double)TMB/(double)num_blocked);
+    printf("TMB: %f\n", (double)TMB/(double)NPROC);
     
     printf("TMT: %f\n", (double)TMT/(double)NPROC);
     
