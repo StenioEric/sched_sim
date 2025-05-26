@@ -29,7 +29,7 @@ void proc_init()
         // cria a thread do processo
         p->tid = createproc_thread(p);
 
-        // adicionando-o na fila de aptos
+        // adicionando-o na primeira fila de aptos
         enqueue(ready, p);
 
         // contabilizando a entrada do processo na fila de aptos

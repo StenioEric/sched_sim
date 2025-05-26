@@ -57,4 +57,5 @@ main_sjf
 main_ljf
 main_prio_static
 main_prio_dynamic
+main_prio_dynamic_quantum
 

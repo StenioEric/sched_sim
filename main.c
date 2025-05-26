@@ -21,7 +21,6 @@ int MAX_TIME = 100;
 
 // Tempo máximo da execução de um processo por entrada na CPU (microsegundos)
 int QUANTUM = 20;
-// int QUANTUM = 100;
 
 // Valor que define a chance de haver uma interrupção
 double INTERRUPT_PROB = 0.5;

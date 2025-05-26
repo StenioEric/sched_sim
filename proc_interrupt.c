@@ -12,8 +12,13 @@ extern struct queue * ready2;   // segunda fila de aptos
 // interrupçao que define sua saída da fila de bloqueados
 void proc_interrupt(struct proc * p)
 {
-    // insere o processo no final da fila de aptos
-    enqueue(ready, p);
+    // insere o processo no final da sua fila de aptos
+    // OBS: de acordo com a variavel 'queue', ele pode ir pra uma fila ou
+    // outra
+    if (p->queue == 0)
+        enqueue(ready, p);
+    else
+        enqueue(ready2, p);
 
     // alterando o status para apto
     p->state = READY;
