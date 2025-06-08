@@ -26,7 +26,8 @@ struct proc
     int turnaround_time;        // Tempo total de execução do processo
     int waiting_time;           // Tempo que ficou na fila de aptos
     int blocked_time;           // Tempo que ficou na fila de bloqueados
-    int process_time;           // Tempo de processamento que o processo precisa
+    int process_time;           // Tempo de processamento que o processo recebe por rodada
+    int process_time_total;     // Tempo de processamento que o processo precisa
     int remaining_time;         // Tempo de processamento restante do processo
 
     // estatisticas
