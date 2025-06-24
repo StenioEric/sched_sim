@@ -8,7 +8,7 @@ for alg in "${algoritmos[@]}"
 do
     echo "Executando algoritmo: $alg"
 
-    # output_file="resultados_${alg}.txt"
+    output_file="resultados_${alg}.txt"
     stats_file="estatisticas_${alg}.txt"
     grafico_file="grafico_${alg}.dat"
 
